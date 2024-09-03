@@ -1,0 +1,168 @@
+
+   .tab-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 5px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+    width: 150px !important; 
+  }
+  
+  .tab:first-child {
+    margin-left: 10px; 
+  }
+  
+  .tab:last-child {
+    margin-right: 10px; 
+  }
+  
+  .tab.active {
+    background-color: #26737B;
+    color: #fff;
+  }
+  
+  .tab:not(.active):hover {
+    background-color: #bbb;
+  }
+  
+  .container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #26737B;
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center; 
+  }
+  
+  .upload-section {
+    width: 100%; 
+    text-align: center;
+  }
+  
+  .upload-box {
+    padding: 20px;
+    border: 2px dashed #26737B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .uploaded-image-container {
+    margin-bottom: 20px;
+  }
+  
+  .uploaded-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .file-name-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+  }
+  
+  .file-name {
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+  }
+  
+  .cancel-icon {
+    font-size: 20px;
+    color: #ff0000;
+    cursor: pointer;
+    margin-top: 45px; 
+  }
+  
+  .upload-text {
+    margin-bottom: 20px;
+  }
+  
+  .supported-formats {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .custom-upload-button {
+    background-color: #26737B;
+    border-color: #26737B;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+
+  .image-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    overflow: hidden; 
+  }
+  
+  .example-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+  }
+  
+  .example-video {
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    margin-left: 20px;
+  }
+  
+
+
+  .bgr header {
+    background-color:  #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-in-out;
+    width: 97.777%;
+  }
+
+
+  .bgr header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  
+
+
+
+  

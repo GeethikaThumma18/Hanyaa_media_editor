@@ -1,0 +1,197 @@
+
+.color-palette-container {
+  min-height: 100vh; 
+  background-image: url('./assets/white-bg.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-bottom: 1rem; 
+}
+
+header {
+  margin-bottom: 2rem;
+  width: 97.7%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-grow: 1; 
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 1rem;
+}
+
+.upload-section,
+.result-section {
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.uploaded-image {
+  margin-top: 1rem;
+}
+
+.uploaded-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.9rem;
+  padding: 1rem;
+}
+
+.image-item {
+  cursor: pointer;
+  margin-right: -0.5rem;
+}
+
+.image-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.transformed-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.centered-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-folder {
+  margin-top: 1rem;
+}
+
+.select-folder select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #8de9f3;
+  color: #26737B;
+  font-size: 1rem;
+  cursor: pointer;
+  appearance: none;
+  background: rgb(250, 247, 247);
+}
+
+.select-folder select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(94, 93, 93, 0.5);
+}
+
+.back-button i {
+  font-size: 1.2rem;
+}
+
+.back-button:hover {
+  background-color: #6496a3;
+}
+
+.back-button.clicked {
+  border: 2px solid #040505;
+}
+
+.image-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ok-button,
+.cancel-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 80px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.ok-button {
+  background-color: #26737B;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #26737B;
+  color: white;
+}
+
+.ok-button:hover,
+.cancel-button:hover {
+  background-color: #4d504d;
+}
+
+.ok-button.clicked,
+.cancel-button.clicked {
+  border-color: #040505;
+}
+
+.dropzone {
+  border: 2px dashed #8de9f3;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.template-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  margin-left: 4.5rem;
+}
+
+.back-button {
+  background-color: #26737B;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: -20px; 
+}
+
+.template-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+} 
+
+

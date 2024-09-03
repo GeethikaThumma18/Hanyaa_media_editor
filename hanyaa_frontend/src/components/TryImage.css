@@ -1,0 +1,261 @@
+
+.FaceSwap {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  background: url('./assets/white-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.FaceSwap main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.description-container {
+  position: relative;
+  width: 80%;
+  height: 350px; 
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container1 {
+  position: absolute;
+  left: 0%; 
+  transform: translateX(8%); 
+  animation: slide-in-left 2s ease-out forwards;
+}
+
+.image-container1 img {
+  
+  width: 150%;
+  max-height: 330px; 
+  border-radius: 10px;
+}
+
+.text-container {
+  position: absolute;
+  left: 0; 
+  transform: translateX(105%); 
+  animation: slide-in-right 2s ease-out forwards;
+  width: 40%; 
+}
+
+.text-container p {
+  font-size: 1.5rem;
+ 
+  color: rgb(12, 12, 12);
+  padding: 10px 20px; 
+  border-radius: 10px;
+  width: fit-content; 
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+@keyframes slide-in-left {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 10%; 
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 10%; 
+  }
+}
+
+.FaceSwap .sections-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.FaceSwap .back-button {
+  position: absolute;
+  top: 40%;
+  left: -100px; 
+  background-color: #26737B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.FaceSwap .back-button:hover {
+  background-color: #656868;
+}
+
+.FaceSwap .upload-face-section,
+.FaceSwap .upload-target-section {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: relative;
+}
+
+.FaceSwap .upload-face-section h2,
+.FaceSwap .upload-target-section h2 {
+  margin: 0;
+}
+
+.FaceSwap .upload-face-button,
+.FaceSwap .upload-target-button {
+  background-color: #26737B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 130px;
+  position: absolute;
+  bottom: 20px;
+  margin-top: 10px;
+}
+
+.FaceSwap .upload-face-button:hover,
+.FaceSwap .upload-target-button:hover {
+  background-color: #656868;
+}
+
+.FaceSwap .run-face-swap-button {
+  background-color: #26737B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  width: 154px;
+}
+
+.FaceSwap .run-face-swap-button:hover {
+  background-color: #656868;
+}
+
+.FaceSwap .arrow-icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+.FaceSwap .uploaded-image {
+  width: 100%;
+  height: auto;
+  max-height: 70%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+
+.FaceSwap .sections-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.FaceSwap header {
+  background-color:  #333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInDown 1s ease-in-out;
+  width: 97.777%;
+}
+
+
+.FaceSwap header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+
+.FaceSwap .tab-header-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+  .tab-button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+} 
+
+ .active-tab-button {
+  background-color: #26737B;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}  
+
+.FaceSwap .tab-header-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button-select {
+  background-color:  #464141;
+  border: none;
+  padding: 10px 40px; 
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  min-width: 850px;
+  text-align: center;
+}
+
+.active-tab-button-select {
+  background-color: #26737B;
+  color: #fff;
+  border: none;
+  padding: 10px 40px; 
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 850px; 
+  text-align: center;
+}
+ 
+
+
+
+

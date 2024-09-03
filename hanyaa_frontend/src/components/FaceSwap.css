@@ -1,0 +1,275 @@
+/* old version */
+
+/* 
+.faceswap-page {
+  text-align: center;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 120vh; 
+  margin: 0; 
+  padding: 0; 
+  background-image: url('./assets/white-bg.jpg');
+}
+
+
+.faceswap-page header {
+  max-width: 97.7%; 
+  margin: 0 auto; 
+}
+
+.faceswap-section {
+  margin: 20px auto; 
+  padding: 20px;
+  max-width: 1200px; 
+  box-sizing: border-box; 
+  border-radius: 10px;
+}
+
+.faceswap-section h2 {
+  margin-bottom: 10px;
+}
+
+.faceswap-section p {
+  margin-bottom: 20px;
+}
+
+.image-container, .video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0; 
+  box-sizing: border-box; 
+}
+
+.faceswap-image {
+  max-width: 400px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faceswap-video {
+  width: 100%; 
+  max-width: 700px; 
+  height: auto; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faceswap-section button {
+  padding: 8px 16px; 
+  background-color: #26737B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; 
+  max-width: 200px; 
+  transition: background-color 0.3s;
+  margin-top: 20px; 
+}
+
+.faceswap-section button:hover {
+  background-color: #8ec7ce;
+}  */
+
+
+
+
+
+ /* canvas template in js version */
+
+ /* .faceswap-container {
+  font-family: 'Arial, sans-serif';
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  flex: 1;
+  margin-right: 20px;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-large {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.image-small {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+
+
+
+
+/* USING CANVAS-IMAGE */
+
+ .faceswap-page {
+  text-align: center;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 120vh; 
+  margin: 0; 
+  padding: 0; 
+  
+}
+
+.faceswap-page header {
+  max-width: 97.7%; 
+  margin: 0 auto; 
+}
+
+.faceswap-section {
+  margin: 20px auto; 
+  padding: 20px;
+  max-width: 1200px; 
+  box-sizing: border-box; 
+  border-radius: 10px;
+}
+
+.faceswap-section h2 {
+  margin-bottom: 10px;
+}
+
+.faceswap-section p {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+  margin: 20px 0; 
+  box-sizing: border-box; 
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;
+  flex-wrap: wrap; 
+  margin: 20px 0; 
+  box-sizing: border-box; 
+}
+
+.faceswap-image {
+  width: 80%; 
+  height: auto; 
+  max-width: 900px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease; 
+}
+
+.faceswap-image:hover {
+  transform: scale(1.1); 
+}
+
+
+.faceswap-video {
+  width: 100%; 
+  max-width: 700px; 
+  height: auto; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* .faceswap-section button {
+  padding: 8px 16px; 
+  background-color: #26737B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; 
+  max-width: 200px; 
+  animation: zoomInOut 2s infinite; 
+  margin-left: 90%; 
+  } */
+  
+  .faceswap-button {
+    padding: 10px 20px; 
+    margin-left: 40px; 
+    background-color: #26737B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    max-width: 200px;
+    animation: zoomInOut 2s infinite;
+  }
+  
+
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+
+.faceswap-section button:hover {
+  background-color: #8ec7ce;
+}  
+
+
+
